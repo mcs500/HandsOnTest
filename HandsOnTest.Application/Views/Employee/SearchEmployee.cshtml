@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Employee Page";
+}
+
+<div class="jumbotron">
+    <h2>Search Employee Page</h2>
+</div>
+
+<div class="container">
+    <div class="col-md-12">
+        <div class="col-md-4">
+            <label>Identification Employee</label>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-4">
+            <input type="number" class="form-control" id="txtId" name="txtId"/>
+        </div>
+        <div class="col-md-4">
+            <button type="button" id="btnSearch" class="btn btn-info">Get Employees</button>
+        </div>
+    </div>
+</div>
+
+<br />
+<br />
+<div class="container">
+    <table class="table table-responsive table-bordered">
+        <thead>
+            <tr>
+                <th class="success">Id</th>
+                <th class="success">Name</th>
+                <th class="success">Contract Type</th>
+                <th class="success">Role Id</th>
+                <th class="success">Role Name</th>
+                <th class="success">Role Description</th>
+                <th class="success">Hourly Salary</th>
+                <th class="success">Monthly Salary</th>
+                <th class="success">Annual Salary</th>
+            </tr>
+        </thead>
+        <tbody id="tblInformation">
+           
+        </tbody>
+    </table>
+</div>
+
+<script src="~/Scripts/View/Employee/SearchEmployee.js"></script>
